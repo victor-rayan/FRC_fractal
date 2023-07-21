@@ -43,8 +43,8 @@ int main()
     socklen_t addr_size;
     DES_cblock key;
 
-    // Chave DES de 8 bytes (64 bits)
-    const char *key_data = "labredes";
+    // Chave DES de 7 bytes (56 bits)
+    const char *key_data = "labrede";
     memcpy(key, key_data, 8);
 
     // Cria o socket TCP
@@ -78,9 +78,6 @@ int main()
         die("Erro ao enviar a chave para o cliente");
 
     printf("Chave enviada para Bob.\n");
-
-    // Fecha o socket do servidor
-    close(server_socket);
 
     // Lê o arquivo .bmp e encripta somente o corpo
     FILE *fractalJulia_file = fopen("fractaljulia.bmp", "rb");
