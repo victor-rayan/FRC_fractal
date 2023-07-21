@@ -57,3 +57,8 @@ bash
 
 ./alice_client
 O servidor descriptografa o arquivo BMP recebido usando sua chave privada RSA e salva o resultado em fractal_decrypted.bmp
+
+
+openssl genpkey -algorithm RSA -out chave.priv
+openssl rsa -pubout -in chave.priv -out chave.pub
+
