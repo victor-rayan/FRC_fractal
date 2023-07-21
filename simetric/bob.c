@@ -6,7 +6,7 @@
 #include <openssl/des.h>
 
 #define SERVER_IP "127.0.0.1"
-#define PORT 12345
+#define PORT 8080
 
 void die(const char *msg)
 {

@@ -5,7 +5,7 @@
 #include <arpa/inet.h>
 #include <openssl/des.h>
 
-#define PORT 12345
+#define PORT 8080
 
 void die(const char *msg)
 {
